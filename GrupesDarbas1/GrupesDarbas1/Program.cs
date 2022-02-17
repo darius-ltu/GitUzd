@@ -6,7 +6,9 @@ namespace GrupesDarbas1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Class1 tasks = new Class1();
+            tasks.AssignAndWrite();
+            Console.ReadLine();
         }
     }
 }
