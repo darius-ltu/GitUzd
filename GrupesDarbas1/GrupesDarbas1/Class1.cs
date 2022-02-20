@@ -11,6 +11,10 @@ namespace GrupesDarbas1
         double area;
         double volume;
         double length;
+        int r = 6371;
+        double pi = 3.1415926535f;
+        int aLenght = 10;
+        int bLenght = 15;
 
         public void AssignAndWrite()
         {
@@ -22,19 +26,20 @@ namespace GrupesDarbas1
 
         public double CountArea()
         {
-            //kodas su return
-
+            area = 4 * pi * (r * r);
+            return area;
         }
 
         public double CountVolume()
         {
-            //kodas su return
-
+            volume = 4f / 3f * pi * (r * r * r);
+            return volume;
         }
 
         public double CountLength()
         {
-            //kodas su return
+            length = Math.Sqrt((aLenght*aLenght)+(bLenght*bLenght));
+            return length;
         }
     }
 }
