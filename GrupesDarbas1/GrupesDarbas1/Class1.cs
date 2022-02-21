@@ -37,6 +37,16 @@ namespace GrupesDarbas1
         public double CountLength(int a, int b)
         {
             return Math.Sqrt((Math.Pow(a, 2) + Math.Pow(b, 2)));
+
+            }
+
+
+        public double CountAreaWolume()
+        {
+            return area + volume;
         }
+
+
+
     }
 }
